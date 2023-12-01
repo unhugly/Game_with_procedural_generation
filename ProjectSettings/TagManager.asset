@@ -19,6 +19,7 @@ TagManager:
   - RuneSpawnPoint
   - KingSpawnPoint
   - Rune2SpawnPoint
+  - RabbitSpawnPoint
   layers:
   - Default
   - TransparentFX
