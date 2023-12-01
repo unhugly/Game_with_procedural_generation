@@ -1,0 +1,1 @@
+public enum Fight_Mode { Peaceful, Agressive, Neutral }

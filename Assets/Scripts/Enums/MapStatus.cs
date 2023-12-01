@@ -1,0 +1,1 @@
+public enum MapStatus { Empty, Loading, Loaded }

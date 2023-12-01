@@ -1,0 +1,1 @@
+public enum AliveStatus { Alive, Wounded, Dead }

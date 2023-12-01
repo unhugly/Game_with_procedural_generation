@@ -1,0 +1,1 @@
+public enum Walk_Mode { Walking, Holding_Position, Attack, Rising }
