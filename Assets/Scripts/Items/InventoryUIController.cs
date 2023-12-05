@@ -89,8 +89,7 @@ public class InventoryUIController : MonoBehaviour
     private void UnequipItem()
     {
         PlayerController.status = Walk_Mode.Walking;
-        Transform player = PlayerReference.player.transform;
-        Transform rightHand = player.Find("RightHand");
+        Transform rightHand = PlayerReference.player.transform.Find("RightHand");
 
         if (rightHand)
         {

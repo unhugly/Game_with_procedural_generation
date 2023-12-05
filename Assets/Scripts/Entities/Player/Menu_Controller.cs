@@ -39,6 +39,7 @@ public class Menu_Controller : MonoBehaviour
 
     public void ExitGame()
     {
+        PlayerReference.player.GetComponent<PlayerWallet>().SaveMoney();
         Application.Quit();
     }
 }

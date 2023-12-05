@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Enums\Fight_Mode.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\MapCamera.cs" />
+    <Compile Include="Assets\Scripts\Entities\Player\WalletData.cs" />
     <Compile Include="Assets\Addons\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Addons\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Scripts\World\VoxelTile.cs" />
