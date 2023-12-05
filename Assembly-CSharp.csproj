@@ -108,6 +108,7 @@
     <Compile Include="Assets\Prefabs\UI\NotActiveNearPlayer.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\ToggleHands.cs" />
     <Compile Include="Assets\Scripts\Items\CollectibleItem.cs" />
+    <Compile Include="Assets\Scripts\SerializationT.cs" />
     <Compile Include="Assets\Scripts\Enums\AliveStatus.cs" />
   </ItemGroup>
   <ItemGroup>

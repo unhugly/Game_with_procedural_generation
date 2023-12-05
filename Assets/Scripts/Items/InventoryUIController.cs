@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class InventoryUIController : MonoBehaviour
 {
     public Image[] itemSlots;
-    public Color selectedColor = Color.yellow; // Цвет для выделения активного слота
-    private Color defaultColor; // Цвет по умолчанию для слота
+    public Color selectedColor = Color.yellow; 
+    private Color defaultColor; 
     private int currentlySelected = -1; // Текущий выбранный слот. -1 означает, что ничего не выбрано
     private Item currentlyEquippedItem = null;
 

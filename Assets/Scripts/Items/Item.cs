@@ -4,6 +4,12 @@ using UnityEngine;
 public class Item
 {
     public string itemName;
-    public Sprite itemIcon;
-    public GameObject itemPrefab;
+    [SerializeField] public Sprite itemIcon;
+    [SerializeField] public GameObject itemPrefab;
+
+    /*public void LoadResources()
+    {
+        itemIcon = Resources.Load<Sprite>(itemIconPath);
+        itemPrefab = Resources.Load<GameObject>(itemPrefabPath);
+    }*/
 }

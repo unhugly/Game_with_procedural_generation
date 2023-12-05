@@ -166,7 +166,7 @@ public class LivingEntity : MonoBehaviour
     public void TakeDamage(float damage)
     {
         if (entityStatus == AliveStatus.Dead) { return; }
-        if (Random.Range(0, 100) > missChance)
+        if (Random.Range(1, 101) > missChance)
         {
             if (currentArmor > 0)
             {
