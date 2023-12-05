@@ -39,7 +39,11 @@ public class Menu_Controller : MonoBehaviour
 
     public void ExitGame()
     {
-        PlayerReference.player.GetComponent<PlayerWallet>().SaveMoney();
+        var wallet = PlayerReference.player.GetComponent<PlayerWallet>();
+        if (wallet != null)
+        {
+            wallet.SaveMoney();
+        }
         Application.Quit();
     }
 }

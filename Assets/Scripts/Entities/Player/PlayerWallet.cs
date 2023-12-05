@@ -9,9 +9,23 @@ public class PlayerWallet : MonoBehaviour
 
     private void Awake()
     {
-        filePath = Path.Combine(Application.persistentDataPath, "wallet.json");
+        string dataPath = Application.persistentDataPath;
+
+#if UNITY_EDITOR
+        dataPath = Path.Combine(dataPath, "Editor");
+#else
+    dataPath = Path.Combine(dataPath, "Build");
+#endif
+
+        if (!Directory.Exists(dataPath))
+        {
+            Directory.CreateDirectory(dataPath);
+        }
+
+        filePath = Path.Combine(dataPath, "wallet.json");
         LoadMoney();
     }
+
 
     private void Update()
     {
