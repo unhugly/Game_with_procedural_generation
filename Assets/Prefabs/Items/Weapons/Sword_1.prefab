@@ -241,8 +241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDetails:
     itemName: Sword
-    itemIcon: {fileID: 21300000, guid: 7b1ad5e7d4463474281c88232f12ccf1, type: 3}
-    itemPrefab: {fileID: 1630824556787365811, guid: 5fe47739b23159843a37f5547a9ce4d8, type: 3}
+    itemIconPath: sword64
+    itemPrefabPath: Sword_1_
 --- !u!114 &6528787950880403729
 MonoBehaviour:
   m_ObjectHideFlags: 0

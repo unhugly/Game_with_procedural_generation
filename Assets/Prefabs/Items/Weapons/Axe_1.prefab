@@ -241,8 +241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDetails:
     itemName: Axe
-    itemIcon: {fileID: 21300000, guid: 202d02356e1decd4ea14b34a4f8aa6c3, type: 3}
-    itemPrefab: {fileID: 1630824556787365811, guid: af1b94dcc691bb64d89691909a533185, type: 3}
+    itemIconPath: axe64
+    itemPrefabPath: Axe_1_
 --- !u!114 &3638777118606767180
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1481468638841657120}
   - component: {fileID: 682781845566918714}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2432,6 +2432,9 @@ MonoBehaviour:
   moveSpeed: 0.5
   rotationSpeed: 500
   jumpForce: 0.04
+  maxStamina: 100
+  staminaDecreasePerSecond: 10
+  staminaRecoveryPerSecond: 5
 --- !u!114 &9071358319883582788
 MonoBehaviour:
   m_ObjectHideFlags: 0

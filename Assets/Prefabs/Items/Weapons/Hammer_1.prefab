@@ -157,8 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDetails:
     itemName: Hammer
-    itemIcon: {fileID: 21300000, guid: d33b066df1cbc6740833e79d44f78179, type: 3}
-    itemPrefab: {fileID: 1630824556787365811, guid: f2dae08d4b88b004e9562984ed1e7b79, type: 3}
+    itemIconPath: hammer64
+    itemPrefabPath: Hammer_1_
 --- !u!114 &6528787950880403729
 MonoBehaviour:
   m_ObjectHideFlags: 0

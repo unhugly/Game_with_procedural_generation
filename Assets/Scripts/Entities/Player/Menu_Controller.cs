@@ -1,13 +1,20 @@
+using System.IO;
 using UnityEngine;
 
 public class Menu_Controller : MonoBehaviour
 {
     public GameObject menuPanel;
     private bool isMenuActive = false;
+    private bool loaded = false;
 
     void Start()
     {
         menuPanel.SetActive(false);
+        if (loaded == false)
+        {
+            Inventory.LoadInventory();
+            loaded = true;
+        }
     }
 
     void Update()
@@ -44,6 +51,9 @@ public class Menu_Controller : MonoBehaviour
         {
             wallet.SaveMoney();
         }
+
+        Inventory.SaveInventory();
+
         Application.Quit();
     }
 }

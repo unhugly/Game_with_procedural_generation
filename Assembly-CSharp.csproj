@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\HPParticle\Scripts\GUICameraScript.cs" />
     <Compile Include="Assets\HPParticle\Scripts\AlwaysFace.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemData.cs" />
     <Compile Include="Assets\HPParticle\Scripts\GUIHPParticleScript.cs" />
     <Compile Include="Assets\Scripts\Enums\Walk_Mode.cs" />
     <Compile Include="Assets\HPParticle\Scripts\PlayerCollisionScript.cs" />
@@ -69,7 +70,6 @@
     <Compile Include="Assets\Scripts\World\MyPopupText.cs" />
     <Compile Include="Assets\Scripts\Enums\MapStatus.cs" />
     <Compile Include="Assets\Scripts\Enums\Fight_Mode.cs" />
-    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\MapCamera.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\WalletData.cs" />
     <Compile Include="Assets\Addons\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
@@ -104,9 +104,9 @@
     <Compile Include="Assets\Scripts\Entities\Player\PlayerBattleController.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Items\Potion.cs" />
+    <Compile Include="Assets\Scripts\NotActiveNearPlayer.cs" />
     <Compile Include="Assets\HPParticle\Scripts\ProjectileShooterScript.cs" />
     <Compile Include="Assets\HPParticle\Scripts\HPParticleScript.cs" />
-    <Compile Include="Assets\Prefabs\UI\NotActiveNearPlayer.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\ToggleHands.cs" />
     <Compile Include="Assets\Scripts\Items\CollectibleItem.cs" />
     <Compile Include="Assets\Scripts\SerializationT.cs" />

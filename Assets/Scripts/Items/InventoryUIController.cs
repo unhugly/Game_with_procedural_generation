@@ -4,10 +4,10 @@ using UnityEngine.UI;
 public class InventoryUIController : MonoBehaviour
 {
     public Image[] itemSlots;
-    public Color selectedColor = Color.yellow; 
+    public Color selectedColor = Color.yellow;
     private Color defaultColor; 
     private int currentlySelected = -1; // Текущий выбранный слот. -1 означает, что ничего не выбрано
-    private Item currentlyEquippedItem = null;
+    private ItemData currentlyEquippedItem = null;
 
     private void Start()
     {
@@ -59,14 +59,14 @@ public class InventoryUIController : MonoBehaviour
     {
         if (index < Inventory.items.Count)
         {
-            Item itemToEquip = Inventory.items[index];
+            ItemData itemToEquip = Inventory.items[index];
 
             Transform player = PlayerReference.player.transform;
             Transform rightHand = player.Find("RightHand");
 
             if (rightHand)
             {
-                if (currentlyEquippedItem == itemToEquip)
+                if (currentlyEquippedItem != null && currentlyEquippedItem.itemName == itemToEquip.itemName)
                 {
                     UnequipItem();
                     return;
@@ -74,17 +74,26 @@ public class InventoryUIController : MonoBehaviour
 
                 UnequipItem();
 
-                GameObject equippedItem = Instantiate(itemToEquip.itemPrefab, rightHand.position, Quaternion.identity, rightHand);
-                equippedItem.transform.localScale = itemToEquip.itemPrefab.transform.localScale;
-                equippedItem.transform.localRotation = Quaternion.identity;
-                equippedItem.transform.Rotate(-60f, 0f, 0f);
-                equippedItem.transform.Rotate(0f, 90f, 0f, Space.Self);
+                GameObject itemPrefab = Resources.Load<GameObject>(itemToEquip.itemPrefabPath);
+                if (itemPrefab != null)
+                {
+                    GameObject equippedItem = Instantiate(itemPrefab, rightHand.position, Quaternion.identity, rightHand);
+                    equippedItem.transform.localScale = itemPrefab.transform.localScale;
+                    equippedItem.transform.localRotation = Quaternion.identity;
+                    equippedItem.transform.Rotate(-60f, 0f, 0f);
+                    equippedItem.transform.Rotate(0f, 90f, 0f, Space.Self);
 
-                currentlyEquippedItem = itemToEquip;
-                PlayerController.status = Walk_Mode.Attack;
+                    currentlyEquippedItem = itemToEquip;
+                    PlayerController.status = Walk_Mode.Attack;
+                }
+                else
+                {
+                    Debug.LogError("Prefab not found at path: " + itemToEquip.itemPrefabPath);
+                }
             }
         }
     }
+
 
     private void UnequipItem()
     {

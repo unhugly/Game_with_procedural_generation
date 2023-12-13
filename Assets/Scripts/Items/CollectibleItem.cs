@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
-    public Item itemDetails;
+    public ItemData itemDetails;
 
     private void OnTriggerEnter(Collider other)
     {
