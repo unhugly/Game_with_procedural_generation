@@ -85,17 +85,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public float GetCurrentStamina()
+    {
+        return currentStamina;
+    }
+
+    public float GetMaxStamina() 
+    {
+        return maxStamina;    
+    }
 
     void ConsumeStamina()
     {
         currentStamina -= staminaDecreasePerSecond * Time.deltaTime;
-        currentStamina = Mathf.Max(currentStamina, 0); // Предотвращение отрицательных значений выносливости
+        currentStamina = Mathf.Max(currentStamina, 0);
     }
 
     void RecoverStamina()
     {
         currentStamina += staminaRecoveryPerSecond * Time.deltaTime;
-        currentStamina = Mathf.Min(currentStamina, maxStamina); // Предотвращение превышения максимальной выносливости
+        currentStamina = Mathf.Min(currentStamina, maxStamina);
     }
 
 

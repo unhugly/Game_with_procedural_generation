@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Entities\Player\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\World\MyPopupText.cs" />
     <Compile Include="Assets\Scripts\Enums\MapStatus.cs" />
+    <Compile Include="Assets\Scripts\Entities\Player\PlayerStaminaBar.cs" />
     <Compile Include="Assets\Scripts\Enums\Fight_Mode.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\MapCamera.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\WalletData.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Scripts\Entities\NPC\RandomWalker.cs" />
     <Compile Include="Assets\Scripts\Entities\NPC\LivingEntity.cs" />
     <Compile Include="Assets\Scripts\World\Portal.cs" />
+    <Compile Include="Assets\Scripts\Entities\Player\HungerBar.cs" />
     <Compile Include="Assets\Scripts\Items\Weapon.cs" />
     <Compile Include="Assets\Scripts\World\RespawningObject.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerHPBar.cs" />

@@ -94,7 +94,6 @@ public class InventoryUIController : MonoBehaviour
         }
     }
 
-
     private void UnequipItem()
     {
         PlayerController.status = Walk_Mode.Walking;
@@ -110,5 +109,4 @@ public class InventoryUIController : MonoBehaviour
 
         currentlyEquippedItem = null;
     }
-
 }

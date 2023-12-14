@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 3228688290333860161}
   - component: {fileID: 672661127407327014}
   m_Layer: 0
-  m_Name: LeftHand (1)
+  m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -779,7 +779,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7135547, y: 1.7135547, z: 1.7135547}
+  m_LocalScale: {x: 1.2591715, y: 1.2591715, z: 1.2591715}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2966015297279393403}
@@ -805,7 +805,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983527084260058877}
   serializedVersion: 4
-  m_Mass: 0.04
+  m_Mass: 0.03
   m_Drag: 1
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -844,9 +844,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.04447001
-  m_Height: 0.11006087
+  m_Height: 0.11245343
   m_Direction: 1
-  m_Center: {x: 0.00023821095, y: 0.14505939, z: 0.07444976}
+  m_Center: {x: 0.00023821095, y: 0.14386307, z: 0.07444976}
 --- !u!114 &7049285848905497745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,7 +887,7 @@ MonoBehaviour:
   attackRange: 0.25
   attackSpeed: 1
   damage: 0.5
-  mode: 1
+  mode: 0
   skinMaterial: {fileID: 2100000, guid: 1b9421e27f677ec428db83291cfbc552, type: 2}
   damagedMaterial: {fileID: 2100000, guid: bcb0d3954067bfa4592e9263e9ae8dc9, type: 2}
   spawnTag: RabbitSpawnPoint
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 7299459802749087459}
   - component: {fileID: 6799107120588879115}
   m_Layer: 0
-  m_Name: RightHand
+  m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1136,7 +1136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0975, y: 0.3656}
+  m_AnchoredPosition: {x: 0.0975, y: 0.3173}
   m_SizeDelta: {x: 0.6844, y: 0.1823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5794731231015021469
