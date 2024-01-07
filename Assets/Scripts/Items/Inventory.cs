@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,6 +57,14 @@ public static class Inventory
     public static bool ContainsItem(ItemData item)
     {
         return items.Any(i => i.itemName == item.itemName);
+    }
+
+    public static void ClearInventory()
+    {
+        items.Clear();
+        SaveInventory();
+        LoadInventory();
+        UpdateUI();
     }
 
     public static void SaveInventory()

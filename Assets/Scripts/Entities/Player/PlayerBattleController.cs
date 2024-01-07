@@ -32,6 +32,9 @@ public class PlayerBattleController : MonoBehaviour
     public static void Die()
     {
         SceneManager.LoadScene(0);
+        Inventory.ClearInventory();
+        PlayerWallet.ResetMoney();
+
     }
 
     private void CheckDeath()

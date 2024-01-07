@@ -33,6 +33,13 @@ public class PlayerWallet : MonoBehaviour
             GameObject.FindWithTag("Wallet").GetComponent<TextMeshProUGUI>().text = money.ToString();
     }
 
+    public static void ResetMoney()
+    {
+        money = 0;
+        PlayerReference.player.GetComponent<PlayerWallet>().SaveMoney();
+        PlayerReference.player.GetComponent<PlayerWallet>().LoadMoney();
+    }
+
     private void ToJSON()
     {
         WalletData data = new WalletData();

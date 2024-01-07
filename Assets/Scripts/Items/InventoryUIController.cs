@@ -9,7 +9,7 @@ public class InventoryUIController : MonoBehaviour
     private int currentlySelected = -1; // Текущий выбранный слот. -1 означает, что ничего не выбрано
     private ItemData currentlyEquippedItem = null;
 
-    private void Start()
+    private void Awake()
     {
         Inventory.InitializeInventorySlots(itemSlots);
         if (itemSlots.Length > 0)

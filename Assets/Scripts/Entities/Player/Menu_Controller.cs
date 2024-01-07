@@ -5,7 +5,7 @@ public class Menu_Controller : MonoBehaviour
 {
     public GameObject menuPanel;
     private bool isMenuActive = false;
-    private bool loaded = false;
+    private static bool loaded = false;
 
     void Start()
     {
