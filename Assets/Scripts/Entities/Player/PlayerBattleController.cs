@@ -29,9 +29,14 @@ public class PlayerBattleController : MonoBehaviour
         CheckDeath();
     }
 
+    public static void Die()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     private void CheckDeath()
     {
-        if (healthPoints <= 0) SceneManager.LoadScene(0);
+        if (healthPoints <= 0) Die();
     }
 
     private void Attack()

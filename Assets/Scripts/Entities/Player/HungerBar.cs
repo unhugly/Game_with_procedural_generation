@@ -17,6 +17,15 @@ public class HungerBar : MonoBehaviour
     {
         IncreaseHunger();
         UpdateHungerBar();
+        CheckDead();
+    }
+
+    void CheckDead()
+    {
+        if (currentHunger == 0f)
+        {
+            PlayerBattleController.Die();
+        }
     }
 
     void IncreaseHunger()
