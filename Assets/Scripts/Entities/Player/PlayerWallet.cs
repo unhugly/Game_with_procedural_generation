@@ -6,6 +6,7 @@ public class PlayerWallet : MonoBehaviour
 {
     public static float money = 0;
     private static string filePath;
+    private static bool loaded = false;
 
     private void Awake()
     {
@@ -14,7 +15,7 @@ public class PlayerWallet : MonoBehaviour
 #if UNITY_EDITOR
         dataPath = Path.Combine(dataPath, "Editor");
 #else
-    dataPath = Path.Combine(dataPath, "Build");
+        dataPath = Path.Combine(dataPath, "Build");
 #endif
 
         if (!Directory.Exists(dataPath))
@@ -23,7 +24,11 @@ public class PlayerWallet : MonoBehaviour
         }
 
         filePath = Path.Combine(dataPath, "wallet.json");
-        LoadMoney();
+        if (loaded == false)
+        {
+            LoadMoney();
+            loaded = true;
+        }
     }
 
 
