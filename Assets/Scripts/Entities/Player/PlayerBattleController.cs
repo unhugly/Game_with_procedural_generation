@@ -34,7 +34,7 @@ public class PlayerBattleController : MonoBehaviour
         SceneManager.LoadScene(0);
         Inventory.ClearInventory();
         PlayerWallet.ResetMoney();
-
+        HungerBar.Feed(100);
     }
 
     private void CheckDeath()

@@ -2667,7 +2667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: 0.25
   healthPoints: 10
-  hunger: 1
   rightHand: {fileID: 3054564127523385476}
   leftHand: {fileID: 5855806398842914172}
 --- !u!114 &2704321264178144717
@@ -2721,6 +2720,7 @@ MonoBehaviour:
   - {fileID: 7983527084260058877, guid: c5dac959877510d499815cdc73790a75, type: 3}
   - {fileID: 7983527084260058877, guid: 42ad75ecd0816ed4bab1ea92cab276e0, type: 3}
   - {fileID: 7983527084260058877, guid: e15c62ea154b5c24680f70a88f5af292, type: 3}
+  - {fileID: 7983527084260058877, guid: 825ea51eb876e6a4f840f1940d48e589, type: 3}
 --- !u!114 &6194544847909743776
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ public class HungerBar : MonoBehaviour
 {
     private Vector3 originalScale;
     private float maxHunger = 100f;
-    private float currentHunger = 0f;
+    private static float currentHunger = 0f;
     private float hungerIncreaseRate;
 
     void Start()
@@ -18,6 +18,12 @@ public class HungerBar : MonoBehaviour
         IncreaseHunger();
         UpdateHungerBar();
         CheckDead();
+    }
+
+    public static void Feed(float value)
+    {
+        currentHunger -= value;
+        currentHunger = Mathf.Max(currentHunger, 0f);
     }
 
     void CheckDead()
@@ -40,6 +46,3 @@ public class HungerBar : MonoBehaviour
         transform.localScale = new Vector3(hungerScale * originalScale.x, originalScale.y, originalScale.z);
     }
 }
-
-
-
